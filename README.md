@@ -7,8 +7,9 @@ At WWDC 2016 Apple announced that they are going to start enforcing ATS checks a
 This tool will help you quickly identify Info.plist files where this exception is set
 
 ### Usage
-python plist_check.py -d <directory to scan>
-directory to scan is the path where the script should start looking for Info.plist files. It will find all Info.plist files in that path and stores the result(pass/fail) in a json file for each file found. It will also print out all the files that didn't pass. You can then look at those projects and update them accordingly  
+python plist_check.py -d directory_to_start_scan  
+
+Directory to start scan is the path where the script should start looking for Info.plist files. It will find all Info.plist files in that path and stores the result(pass/fail) in a json file for each file found. It will also print out all the files that didn't pass. You can then look at those projects and update them accordingly  
 As app bundles are directories, the best way to use this is to put all your iOS app bundles in one directory and point the tool at that directory
 
 ### Useful links
